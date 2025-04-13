@@ -65,7 +65,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSwitchMode }) => {
             <CreditCard className="h-6 w-6 text-white" />
           </div>
         </div>
-        <CardTitle className="text-2xl text-center">Login to InvoiceVista</CardTitle>
+        <CardTitle className="text-2xl text-center">Login to InfoHub</CardTitle>
         <CardDescription className="text-center">
           Enter your username and password to access your invoices
         </CardDescription>

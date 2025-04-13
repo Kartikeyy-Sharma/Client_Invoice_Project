@@ -20,7 +20,7 @@ const Login: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col justify-center items-center p-4">
       <div className="w-full max-w-md">
-        <h1 className="text-4xl font-bold text-center mb-2 text-primary">InvoiceVista</h1>
+        <h1 className="text-4xl font-bold text-center mb-2 text-primary">InfoHub</h1>
         <p className="text-center text-muted-foreground mb-8">
           Client Invoice and Payment Management System
         </p>

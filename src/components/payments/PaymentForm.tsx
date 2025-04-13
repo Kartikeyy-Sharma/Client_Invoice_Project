@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { CreditCard, DollarSign } from 'lucide-react';
+import { CreditCard, IndianRupee } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { createPayment } from '@/services/paymentService';
 
@@ -68,7 +68,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
       
       toast({
         title: "Payment successful",
-        description: `Your payment of $${amountPaid.toFixed(2)} has been processed.`,
+        description: `Your payment of ₹${amountPaid.toFixed(2)} has been processed.`,
       });
       
       // Refresh payment history
@@ -95,7 +95,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
     <Card className="mt-6">
       <CardHeader>
         <CardTitle className="flex items-center text-xl">
-          <DollarSign className="h-5 w-5 mr-2 text-primary" />
+          <IndianRupee className="h-5 w-5 mr-2 text-primary" />
           Make a Payment
         </CardTitle>
       </CardHeader>
@@ -105,7 +105,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
             <div className="space-y-2">
               <Label htmlFor="amount">Payment Amount</Label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">₹</span>
                 <Input 
                   id="amount"
                   type="number"
@@ -119,7 +119,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
                 />
               </div>
               <p className="text-sm text-muted-foreground">
-                Remaining balance: ${remaining.toFixed(2)}
+                Remaining balance: ₹{remaining.toFixed(2)}
               </p>
             </div>
             

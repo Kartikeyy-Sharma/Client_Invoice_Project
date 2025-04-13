@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <CreditCard className="h-6 w-6" />
-            <h1 className="text-xl font-bold">InvoiceVista</h1>
+            <h1 className="text-xl font-bold">InfoHub</h1>
           </div>
           <Button variant="ghost" onClick={handleLogout} className="text-white hover:text-white hover:bg-primary/80">
             <LogOut className="h-4 w-4 mr-2" />
@@ -68,11 +68,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <h2 className="text-lg font-semibold">InvoiceVista</h2>
+              <h2 className="text-lg font-semibold">InfoHub</h2>
               <p className="text-sm text-gray-400">Your Client Invoice and Payment Management System</p>
             </div>
             <div className="text-sm text-gray-400">
-              © {new Date().getFullYear()} InvoiceVista. All rights reserved.
+              © {new Date().getFullYear()} InfoHub. All rights reserved.
             </div>
           </div>
         </div>
